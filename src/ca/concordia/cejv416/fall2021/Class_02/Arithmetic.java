@@ -10,6 +10,7 @@ public class Arithmetic {
         int b = 2;
 
         int c = a + b;
+
         double d = a / b;
 
         double e = 5.0 / 2;
