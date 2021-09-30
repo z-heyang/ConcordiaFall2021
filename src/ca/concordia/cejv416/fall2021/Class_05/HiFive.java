@@ -21,6 +21,8 @@ public class HiFive {
             System.out.println("hiEven");
         }
 
+        // ---------------------------
+
         boolean five = (answer % 5) == 0;
         boolean even = (answer % 2) == 0;
 
