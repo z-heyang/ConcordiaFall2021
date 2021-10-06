@@ -23,31 +23,19 @@ public class menu_example {
         String response;
         String subResponse;
 
-        String MainMenuText = "Main Menu\n" +
-                "A) Square a number\n" +
-                "B) Math menu\n" +
-                "Q) Quit program";
-
-        String MathMenuText = "Math Menu\n" +
-                "A) Negate a number\n" +
-                "B) Double a number\n" +
-                "Q) Return to Main Menu";
-
-        String Prompt = "Selection >";
-
         // MAIN MENU LOGIC
         while(true)
         {
-            System.out.println(MainMenuText);
-            System.out.print(Prompt);
+            System.out.println(MenuConstants.MainMenuText);
+            System.out.print(MenuConstants.Prompt);
             response = s.nextLine();
 
             // Display Math Menu - Choice B
             if (response.equalsIgnoreCase("B"))
             {
                 while(true) {
-                    System.out.println(MathMenuText);
-                    System.out.print(Prompt);
+                    System.out.println(MenuConstants.MathMenuText);
+                    System.out.print(MenuConstants.Prompt);
                     subResponse = s.nextLine();
 
                     if(subResponse.equalsIgnoreCase("A"))
