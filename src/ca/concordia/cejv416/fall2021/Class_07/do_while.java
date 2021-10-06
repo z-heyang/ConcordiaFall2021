@@ -1,6 +1,6 @@
 package ca.concordia.cejv416.fall2021.Class_07;
 
-public class dowhile {
+public class do_while {
 
     public static void main(String[] args) {
 
@@ -33,8 +33,13 @@ public class dowhile {
 
         // DO-WHILE
 
-        int counter3 = 0;
+        int counter3 = 15;
 
+        do {
+            counter3 += 2;
+            System.out.println("Number: " + counter3);
+        }
+        while (counter3 < 10);
 
 
     }
