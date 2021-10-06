@@ -21,6 +21,7 @@ public class menu_example {
         Scanner s = new Scanner(System.in);
 
         String response;
+        String subResponse;
 
         String MainMenuText = "Main Menu\n" +
                 "A) Square a number\n" +
@@ -47,11 +48,24 @@ public class menu_example {
                 while(true) {
                     System.out.println(MathMenuText);
                     System.out.print(Prompt);
-                    response = s.nextLine();
+                    subResponse = s.nextLine();
 
+                    if(subResponse.equalsIgnoreCase("A"))
+                    {
+                        System.out.println("Enter a number to negate: ");
+                        double num = s.nextDouble();
+                        System.out.println(num * -1);
+                    }
+
+                    if(subResponse.equalsIgnoreCase("B"))
+                    {
+                        System.out.println("Enter a number to double: ");
+                        double num = s.nextDouble();
+                        System.out.println(num + num);
+                    }
 
                     // User selection Q - Goes back to the previous menu.
-                    if(response.equalsIgnoreCase("Q"))
+                    if(subResponse.equalsIgnoreCase("Q"))
                     {
                         break;
                     }
