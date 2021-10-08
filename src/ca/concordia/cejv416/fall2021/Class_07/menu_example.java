@@ -24,46 +24,39 @@ public class menu_example {
         String subResponse;
 
         // MAIN MENU LOGIC
-        while(true)
-        {
+        while (true) {
             System.out.println(MenuConstants.MainMenuText);
             System.out.print(MenuConstants.Prompt);
             response = s.nextLine();
 
             // Display Math Menu - Choice B
-            if (response.equalsIgnoreCase("B"))
-            {
-                while(true) {
+            if (response.equalsIgnoreCase("B")) {
+                while (true) {
                     System.out.println(MenuConstants.MathMenuText);
                     System.out.print(MenuConstants.Prompt);
                     subResponse = s.nextLine();
 
-                    if(subResponse.equalsIgnoreCase("A"))
-                    {
+                    if (subResponse.equalsIgnoreCase("A")) {
                         System.out.println("Enter a number to negate: ");
                         double num = s.nextDouble();
                         System.out.println(num * -1);
                     }
 
-                    if(subResponse.equalsIgnoreCase("B"))
-                    {
+                    if (subResponse.equalsIgnoreCase("B")) {
                         System.out.println("Enter a number to double: ");
                         double num = s.nextDouble();
                         System.out.println(num + num);
                     }
 
                     // User selection Q - Goes back to the previous menu.
-                    if(subResponse.equalsIgnoreCase("Q"))
-                    {
+                    if (subResponse.equalsIgnoreCase("Q")) {
                         break;
                     }
-
                 }
             }
 
             // User selection A
-            if(response.equalsIgnoreCase("A"))
-            {
+            if (response.equalsIgnoreCase("A")) {
                 System.out.println("OK, Square a number.");
                 System.out.println("Enter a number to square >");
                 response = s.nextLine();
@@ -72,13 +65,11 @@ public class menu_example {
             }
 
             // User selection Q - Quits the program
-            if(response.equalsIgnoreCase("Q"))
-            {
+            if (response.equalsIgnoreCase("Q")) {
                 System.out.println("Thank you for using this program.");
                 break;
             }
         }
-
 
 
     }
