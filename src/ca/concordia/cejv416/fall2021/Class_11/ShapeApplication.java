@@ -8,6 +8,13 @@ public class ShapeApplication {
     public static void main(String[] args) {
 
         Circle c = new Circle("Red", "Bob", 10);
+        Circle d = new Circle("Red", "Bob", 10);
+
+        boolean isSame = c.equals(c);
+        System.out.println(isSame);
+
+        //System.out.println(c);
+
 
         //Shape s = new Shape("Red", "JAck");
 

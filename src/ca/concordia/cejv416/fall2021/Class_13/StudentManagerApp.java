@@ -12,6 +12,11 @@ public class StudentManagerApp {
         System.out.println(st1.getId());
         System.out.println(st2.getId());
 
+        double x = Math.pow(32, 2);
+
         //System.out.println(st1.whatIsTheNextId());
+
+        //double num = Math.PI;
+        //System.out.println(Math.max(5, 6));
     }
 }
