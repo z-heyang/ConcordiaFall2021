@@ -9,6 +9,22 @@ public class Student {
 
     private static int lastId = 0;
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", permCode='" + permCode + '\'' +
+                '}';
+    }
+
+    //    @Override
+//    public String toString()
+//    {
+//        return "This is a student" + firstName + lastName;
+//    }
+
     public Student(String firstName, String lastName, String permCode) {
         this.firstName = firstName;
         this.lastName = lastName;
