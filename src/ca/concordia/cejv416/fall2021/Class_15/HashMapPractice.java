@@ -1,7 +1,6 @@
 package ca.concordia.cejv416.fall2021.Class_15;
 
 import ca.concordia.cejv416.fall2021.Class_13.Student;
-
 import java.util.HashMap;
 
 public class HashMapPractice {
